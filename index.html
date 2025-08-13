@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="index.html " >
+                <i class="fab fa-twitter tx-primary"></i>
+            </a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="explore.html" class="nav-link">
+                        <i class="fas fa-search"></i>
+                        Explore
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="notifications.html" class="nav-link">
+                        <i class="fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="messages.html" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        Messages
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="bookmarks.html" class="nav-link">
+                        <i class="fas fa-bookmark"></i>
+                        Bookmarks
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+            </ul>
+            <button class="tweet-btn">Tweet</button>
+        </nav>
+
+      
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Home</h1>
+            </header>
+
+            
+                <div class="tweet-composer">
+                <div class="composer-content">
+                    <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="Profile" class="profile-img">
+                    <textarea placeholder="What's happening?" id="tweet-input"></textarea>
+                </div>
+                <div class="composer-actions">
+                    <div class="action-icons">
+                        <i class="far fa-image"></i>
+                        <i class="fas fa-film"></i>
+                        <i class="far fa-chart-bar"></i>
+                        <i class="far fa-smile"></i>
+                        <i class="far fa-calendar"></i>
+                    </div>
+                    <button class="tweet-submit" id="tweet-submit">Tweet</button>
+                </div>
+            </div>
+
+          
+            <div class="tweet-feed" id="tweet-feed">
+
+            </div>
+        </main>
+
+       
+        <aside class="right-sidebar">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Twitter">
+            </div>
+            
+            <div class="trends">
+                <h3>Trends for you</h3>
+                <div class="trend-item">
+                    <span class="trend-category">Trending in Your Country</span>
+                    <span class="trend-hashtag">#JavaScript</span>
+                    <span class="trend-count">125K Tweets</span>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">Technology</span>
+                    <span class="trend-hashtag">#WebDev</span>
+                    <span class="trend-count">89.2K Tweets</span>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-category">Business</span>
+                    <span class="trend-hashtag">#Startup</span>
+                    <span class="trend-count">45K Tweets</span>
+                </div>
+            </div>
+
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <div class="follow-suggestion">
+                    <img src="https://via.placeholder.com/40" alt="User" class="suggestion-img">
+                    <div class="suggestion-info">
+                        <span class="suggestion-name">Tech News</span>
+                        <span class="suggestion-handle">@technews</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-suggestion">
+                    <img src="https://via.placeholder.com/40" alt="User" class="suggestion-img">
+                    <div class="suggestion-info">
+                        <span class="suggestion-name">Dev Community</span>
+                        <span class="suggestion-handle">@devcommunity</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
